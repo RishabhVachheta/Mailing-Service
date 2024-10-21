@@ -54,6 +54,7 @@ app.put('/api/mail-configs/:id', async (req: Request, res: Response) => {
     } catch (error) {
       res.status(500).json({ message: 'Error updating mail config', error });
     }
+    console.log("it is a working");
   });
 
   // 4. Delete
